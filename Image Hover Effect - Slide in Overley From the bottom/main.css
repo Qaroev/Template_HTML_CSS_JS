@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+.container {
+    width: 600px;
+    height: 400px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+
+.container img {
+    width: 100%;
+    height: 100%;
+}
+
+.container .overly {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(68, 134, 246, .6);
+    transform: translateY(100%);
+    transition: .4s;
+}
+
+.container .overly h1 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    padding: 15px 10px;
+    border: 3px solid #fafafa;
+    color: #fafafa;
+}
+
+.container:hover .overly {
+    transform: translateY(0);
+}

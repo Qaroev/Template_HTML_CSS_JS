@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #90caf9;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.Menu {
+    background-color: #4486F6;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    clip-path: circle(30px at 90% 40px);
+    transition: clip-path .4s;
+}
+
+.full {
+    clip-path: circle(100%);
+}
+
+.Menu .nav {
+    height: 80px;
+    position: relative;
+    top: 0;
+}
+
+.Menu .nav img {
+    width: 60px;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 90%;
+}
+
+.Menu .nav h1 {
+    text-transform: uppercase;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #fafafa;
+}
+
+.container {
+    position: relative;
+    width: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 20px 0;
+}
+
+.Menu input {
+    width: calc(80% - 20px);
+    padding: 10px 20px;
+    background-color: transparent;
+    border: none;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #fafafa;
+    font-size: 28px;
+    color: #fafafa;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.Menu button {
+    width: 40px;
+    height: 40px;
+    padding: 10px 0;
+    margin-left: 20px;
+    background-size: cover;
+    background-position: center;
+    background-color: transparent;
+    border: none;
+}
+
+.Menu input::placeholder {
+    color: #e2e2e2;
+}
+
+.Menu ul {
+    text-align: center;
+    font-size: 28px;
+    list-style: none;
+}
+
+.Menu ul a {
+    color: #fafafa;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.Menu ul a li {
+    padding: 20px 0;
+    transition: .4s;
+}
+
+.Menu ul a li:hover {
+    background-color: #0277bd;
+}
