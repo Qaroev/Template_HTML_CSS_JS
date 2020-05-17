@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Roboto');
+
+* {
+
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+.container {
+    position: relative;
+    width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.filter {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgb(253, 45, 154);
+    background: -moz-linear-gradient(0deg, rgba(253, 45, 154, 1) 0%, rgba(34, 193, 195, 1) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(253, 45, 154, 1) 0%, rgba(34, 193, 195, 1) 100%);
+    background: linear-gradient(0deg, rgba(253, 45, 154, 1) 0%, rgba(34, 193, 195, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fd2d9a", endColorstr="#22c1c3", GradientType=1);
+    opacity: .7;
+}
+
+#btn {
+    float: right;
+    font-size: 2.5em;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    color: #fafafa;
+    display: none;
+}
+
+.nav {
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    padding: 5px 0;
+    height: 64px;
+    background: transparent;
+}
+
+.nav .logo {
+    margin-top: 18px;
+    float: left;
+    font-size: 1.5em;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 1.03rem;
+    color: #fafafa;
+}
+
+.nav .menu {
+    float: right;
+
+    margin-top: 20px;
+}
+
+.nav .menu li {
+    display: inline-block;
+    margin-left: 15px;
+
+}
+
+.nav .menu li a {
+    font-size: 1.3em;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    color: #fafafa;
+    transition: all .4s ease-in-out;
+}
+
+.nav ul li a:hover {
+    color: #fd2d9a;
+}
+
+.responcive {
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: 0;
+}
+
+.header {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/jeff-sheldon-3228-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header .center {
+    position: absolute;
+    width: 80%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    color: #fafafa;
+}
+
+.header .center h1 {
+    font-size: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1.03rem;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 16px;
+}
+
+.header .center h2 {
+    text-align: center;
+    font-size: 1.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1.03rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media screen and ( max-width: 930px) {
+    .nav .logo {
+        text-align: center;
+        float: left;
+        letter-spacing: .5rem;
+    }
+
+    .nav .menu {
+        display: none;
+    }
+
+    #btn {
+        display: block;
+        text-align: right;
+        margin-top: 8px;
+    }
+
+    .responcive {
+        display: none;
+        background-color: rgba(32, 32, 32, .99);
+    }
+
+    .responcive .logo {
+        float: left;
+    }
+
+    .responcive ul {
+        clear: both;
+        padding-top: 20px;
+    }
+
+    .responcive ul li {
+        text-align: center;
+        list-style: none;
+        margin: 30px 0;
+
+    }
+
+    .responcive .men_head {
+        padding: 5px 0;
+    }
+
+    .responcive ul li a {
+        font-size: 1.3em;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: 'Open Sans', sans-serif;
+        color: #fafafa;
+        transition: all .4s ease-in-out;
+    }
+
+    .header .center h1 {
+        font-size: 2rem;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: .5rem;
+        font-family: 'Montserrat', sans-serif;
+        margin-bottom: 16px;
+    }
+
+    .header .center h2 {
+        text-align: center;
+        font-size: .75rem;
+        text-transform: uppercase;
+        letter-spacing: .5rem;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+<div class="container">
+    <div class="accordion">
+        <div class="title">
+            <h1>this is a simple title</h1>
+            <p>+</p>
+        </div>
+        <div class="content">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris maximus aliquam purus commodo
+                consectetur. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
+                egestas. Ut nec nibh ut sapien ultricies hendrerit. Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit. Donec rhoncus vestibulum mollis. Curabitur porttitor fermentum ipsum, a congue metus mattis sit
+                amet. In et pretium lacus.
+            </p>
+        </div>
+
+    </div>
+
+
+    <div class="accordion">
+        <div class="title">
+            <h1>this is a simple title</h1>
+            <p>+</p>
+        </div>
+        <div class="content">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris maximus aliquam purus commodo
+                consectetur. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
+                egestas. Ut nec nibh ut sapien ultricies hendrerit. Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit. Donec rhoncus vestibulum mollis. Curabitur porttitor fermentum ipsum, a congue metus mattis sit
+                amet. In et pretium lacus.
+            </p>
+        </div>
+
+    </div>
+
+    <div class="accordion">
+        <div class="title">
+            <h1>this is a simple title</h1>
+            <p>+</p>
+        </div>
+        <div class="content">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris maximus aliquam purus commodo
+                consectetur. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
+                egestas. Ut nec nibh ut sapien ultricies hendrerit. Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit. Donec rhoncus vestibulum mollis. Curabitur porttitor fermentum ipsum, a congue metus mattis sit
+                amet. In et pretium lacus.
+            </p>
+        </div>
+
+    </div>
+</div>
+
+<script>
+
+    $(document).ready(function () {
+        $('.title').on('click', function () {
+            $(this).next($('.content')).slideToggle();
+        });
+    });
+
+
+</script>
+</body>
+
+</html>

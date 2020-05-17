@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+
+.tab_container {
+    position: absolute;
+    width: 80%;
+    left: 50%;
+    top: 25%;
+    transform: translate3d(-50%, 0, 0);
+
+
+}
+
+.indicator {
+    position: relative;
+    display: block;
+    width: 33%;
+    height: 4px;
+    background-color: #90a4ae;
+    transition: .4s;
+    left: 0;
+
+}
+
+.tab-buttons button {
+    width: 33%;
+    padding: 15px 0;
+    border: none;
+    background: #fff;
+    transition: .4s;
+    font-size: 2rem;
+    color: #90a4ae;
+}
+
+.tab-buttons button i {
+    margin-right: 15px;
+}
+
+
+.tab-panels {
+    padding: 15px 0;
+
+}
+
+.tab-panels .panel img {
+    float: left;
+    width: 33%;
+    margin-right: 15px;
+    animation-name: ImgAnimation;
+    animation-duration: 2s;
+
+}
+
+.tab-panels .panel p {
+    font-size: 18px;
+    line-height: 2em;
+    animation-name: p-animation;
+    animation-duration: 2s;
+
+
+}
+
+@keyframes ImgAnimation {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes p-animation {
+    0% {
+        transform: translateX(50px);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.hidden {
+    display: none;
+}
